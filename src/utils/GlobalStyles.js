@@ -1,17 +1,20 @@
 
-import {creteGlobaStyle} from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
-const GlobalStyle = creteGlobaStyle`
+const GlobalStyle = createGlobalStyle`
     body {
         padding:0;
         margin: 0;
-        font-fanmily: 'Montserrat';
+        font-family: 'Montserrat';
         color: white;
+        background: blue;
     }
 
-    *. *::before, *::after {
+    *, *::before, *::after {
         box-sizing: border-box;
     }
 
     
 `;
+
+export default GlobalStyle;
