@@ -1,18 +1,19 @@
-import * as React from "react"
+import React from 'react'
+import { Link } from "gatsby";
 import  Button  from "../components/Button"
 import Layout from "../layout/Layout"
 
 
 
-const IndexPage = () => {
-  <Layout>
+const IndexPage = () => (
+    <Layout>
+      <Button as={Link} to='/about'>Kliknij</Button>
+      <h1>Witamy</h1>
+    </Layout>
+  
+);
+export default IndexPage;
 
-    <h1>Witamy Witamy</h1>
-    <Button >Argeerg</Button>
-  </Layout>
 
-}
-
-export default IndexPage
 
 

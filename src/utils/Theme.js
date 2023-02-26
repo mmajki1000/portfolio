@@ -3,8 +3,8 @@ import {fonts }from './fonts'
 
 export const theme = {
     colors,
-    fonts
+    fonts,
  
 }
 
-//export default theme;
+export default theme;

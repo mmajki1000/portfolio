@@ -1,7 +1,7 @@
 import React from "react";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 //import GlobalStyle from '../utils/GlobalStyles';
-import {theme } from '../utils/theme';
+import {theme} from '../utils/theme';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -17,14 +17,26 @@ const GlobalStyle = createGlobalStyle`
     }   
 `;
 
-const Layout = ({children}) => {
+const StyledWrapper = styled.div`
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: start;
+    position: relative;
+    max-width: 1200px;
+`;
+
+ const Layout = ({children}) => (
     <ThemeProvider theme={theme}>
         <>
         <GlobalStyle/>
+        <StyledWrapper>
             {children}
-
+        </StyledWrapper>
         </>
     </ThemeProvider>
-}
+     
+ )
 
 export default Layout;

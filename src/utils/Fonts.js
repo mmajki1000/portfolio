@@ -6,4 +6,4 @@ export const fonts = {
     
 }
 
-//export default fonts;
+export default fonts;
