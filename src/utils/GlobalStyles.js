@@ -2,17 +2,24 @@
 import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-    body {
-        padding:0;
-        margin: 0;
-        font-family: 'Montserrat';
-        color: white;
-        background: blue;
-    }
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    *, *::before, *::after {
-        box-sizing: border-box;
-    }
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Raleway', sans-serif;
+   font-size: 1.6rem;
+
+}
 
     
 `;
