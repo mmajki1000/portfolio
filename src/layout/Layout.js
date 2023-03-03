@@ -5,14 +5,6 @@ import {theme} from '../utils/theme';
 import {Nav} from '../components/Nav';
 
 
-
-
-const StyledWrapper = styled.div`
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-`;
-
  const Layout = ({children}) => (
     <ThemeProvider theme={theme}>
         <>

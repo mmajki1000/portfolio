@@ -1,18 +1,22 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import React from 'react'
-import Button from '../components/Button'
+import Wrapper from '../components/Wrapper'
 import Layout from '../layout/Layout'
+import H2 from '../components/h/H2'
+
 
 const Section = styled.section`
 `
 
 const AboutPage = () => (
     <Layout>
-        <div>
-            <div>about</div>
-            <Button as={Link} to='/'>Back</Button>
-        </div>
+        <section id='about'>
+            <Wrapper> 
+                <H2>Helloooooo</H2>
+            </Wrapper>
+        </section>
+
     </Layout>
 
 );
